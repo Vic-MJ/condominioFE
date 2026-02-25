@@ -1,0 +1,82 @@
+
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes desaparecer {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animacion-aparecer {
+  animation: aparecer 0.3s ease-out forwards;
+}
+
+.animacion-desaparecer {
+  animation: desaparecer 0.3s ease-in forwards;
+}
+
+.spinner {
+  animation: girar 1s linear infinite;
+  display: inline-block;
+}
+
+.alerta-contenedor {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+}
+
+.alerta-exito {
+  background-color: #065f46;
+  color: #ecfdf5;
+  border-left: 4px solid #10b981;
+}
+
+.alerta-error {
+  background-color: #991b1b;
+  color: #fef2f2;
+  border-left: 4px solid #ef4444;
+}
+
+.boton-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.boton-primario {
+  background-color: var(--primary);
+  color: white;
+}
+
+.boton-primario:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.boton-base:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
