@@ -1,0 +1,200 @@
+.eventos-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.eventos-content {
+    flex: 1;
+    padding: 0 3rem 2rem 3rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header-reservas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-reservas {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-nueva-reserva {
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-nueva-reserva:hover {
+    background-color: #2563eb;
+}
+
+.filtro-reservas {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.select-contenedor {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.select-filtro {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--input-bg);
+    color: white;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.select-filtro:focus {
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.select-icono {
+    position: absolute;
+    right: 10px;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.tarjeta-reserva {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tarjeta-reserva-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.etiquetas-contenedor {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.etiqueta {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+.etiqueta-icono {
+    display: flex;
+}
+
+.bg-azul {
+    background-color: #3b82f6;
+}
+
+.bg-verde {
+    background-color: #10b981;
+}
+
+.bg-verde-claro {
+    background-color: #22c55e;
+}
+
+.bg-naranja {
+    background-color: #f59e0b;
+}
+
+.acciones-reserva {
+    display: flex;
+    gap: 1rem;
+    color: var(--text-muted);
+}
+
+.icono-accion {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.icono-accion:hover {
+    color: white;
+}
+
+.icono-borrar:hover {
+    color: #ef4444;
+}
+
+.tarjeta-reserva-titulo {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    margin: 0.25rem 0;
+}
+
+.detalles-fecha-hora {
+    display: flex;
+    gap: 3rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.detalle-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.separador-tarjeta {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 0.25rem 0;
+}
+
+.detalles-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.info-texto {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.info-texto strong {
+    color: var(--text-muted);
+    font-weight: 500;
+}

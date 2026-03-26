@@ -1,0 +1,133 @@
+.inicio-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.inicio-content {
+    flex: 1;
+    padding: 0 3rem 2rem 3rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.tarjeta-estadistica {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 140px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tarjeta-titulo {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.tarjeta-icono-contenedor {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-azul { background-color: #3b82f6; color: white; }
+.icono-verde { background-color: #22c55e; color: white; }
+.icono-naranja { background-color: #f97316; color: white; }
+.icono-rojo { background-color: #ef4444; color: white; }
+
+.tarjeta-valor {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.actividad-reciente-contenedor {
+    background-color: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.actividad-titulo {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.lista-actividad {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.item-actividad {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.item-actividad:last-child {
+    border-bottom: none;
+}
+
+.punto-indicador {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    margin-top: 6px;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.detalles-actividad {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.titulo-actividad {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.descripcion-actividad {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.tiempo-actividad {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
